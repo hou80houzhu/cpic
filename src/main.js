@@ -47,7 +47,7 @@ Module({
         basePath: "images/fd.",
         from: 1,
         to: 330,
-        suffix: "jpeg",
+        suffix: "png",
         type: "fit",
         time: 50,
         autoplay: false,
