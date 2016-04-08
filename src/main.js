@@ -47,7 +47,7 @@ Module({
         basePath: "images/fd.",
         from: 1,
         to: 330,
-        suffix: "png",
+        suffix: "jpg",
         type: "fit",
         time: 50,
         autoplay: false,
@@ -103,7 +103,9 @@ Module({
                     images.push(this);
                     tp.next();
                 });
-            }, null, paths[i]);
+            }, function(){
+                this.next();
+            }, paths[i]);
         }
         queue.run();
         ths.dispatchEvent("start");
